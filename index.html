@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>МобилМаркет Москва - Каталог</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="catalog">
+    <header class="hero">
+      <div class="hero__content container">
+        <div>
+          <p class="hero__badge">Москва • демонстрационный сайт</p>
+          <h1>МобилМаркет</h1>
+          <p class="hero__subtitle">Новые смартфоны с официальной гарантией, рассрочкой и трейд-ином.</p>
+        </div>
+        <div class="hero__meta">
+          <span>Ежедневно: 10:00–22:00</span>
+          <span>Контакты: только для демонстрации</span>
+          <button id="cartBtn" class="cart-btn">Корзина: <strong id="cartCount">0</strong></button>
+        </div>
+      </div>
+    </header>
+
+    <nav class="container top-nav">
+      <a href="index.html">Каталог</a>
+      <a href="cart.html">Корзина</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+
+    <main class="container">
+      <section class="filters">
+        <label>
+          Бренд
+          <select id="brandFilter">
+            <option value="all">Все</option>
+            <option value="Apple">Apple</option>
+            <option value="Samsung">Samsung</option>
+            <option value="Xiaomi">Xiaomi</option>
+            <option value="Google">Google</option>
+          </select>
+        </label>
+        <label>
+          Максимальная цена
+          <input id="priceFilter" type="range" min="30000" max="170000" value="170000" step="5000" />
+          <span id="priceValue">170000 ₽</span>
+        </label>
+      </section>
+
+      <section>
+        <h2>Смартфоны в наличии</h2>
+        <div id="products" class="grid"></div>
+      </section>
+    </main>
+
+    <footer class="demo-footer">Этот сайт является примером и демонстрацией для портфолио.</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
